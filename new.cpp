@@ -1,5 +1,5 @@
 #include<iostream>
-using namespace std;//welcome again habibi
+using namespace std;//welcome again habibis
 int main()
 {
     cout << "Hello World";
