@@ -8,8 +8,13 @@ class Time{
         min=20;
         sec=33;
      }
-     void operator ++()
+     void operator++ ()
      {
+        ++sec;
+     }
+     void operator ++(int)//for the post increment dummy int is required
+     {
+       
        sec++;
 
      }
@@ -23,6 +28,8 @@ int main()
     Time t1;
     t1.display();
     ++t1;
+    t1.display();
+    t1++;
     t1.display();
 
     return 0;
