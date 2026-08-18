@@ -22,7 +22,7 @@ class Fahrenheit {
     float f;
     public:
       friend void operator >>(istream &in,Fahrenheit &d);
-      friend void operator << (ostream &out,Fahrenheit &d);
+    
    
     
   
