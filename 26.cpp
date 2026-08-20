@@ -8,7 +8,7 @@
 using namespace std;
 class Classifier{
     public:
-    virtual void classify(){}
+    void classify(){}
 };
 
 class DecisionTree : public Classifier{
