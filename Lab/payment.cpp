@@ -57,6 +57,7 @@ int main()
 {    int choice;
     cout << "Choose Your Payment Method" << std::endl;
     cout << setw(25) <<left << "1.Credit Card " << setw(25) << "2.Digital Wallet" << setw(25) << "3.Cash On Delivery" << endl;
+    cout << "Enter your choice:";
     cin >> choice;
     switch(choice)
   {
