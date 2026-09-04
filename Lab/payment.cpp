@@ -7,7 +7,7 @@ class payment {
    virtual void putdata()=0;
     void complete()
     {
-        cout << "payment sucessfull";
+        cout << "Payment sucessfull \n";
     }
 };
 class CreditCard:public payment {
@@ -53,32 +53,5 @@ class CashOnDelivery:public payment {
         cin >> time;
     }
 };
-int main()
-{    int choice;
-    cout << "Choose Your Payment Method" << std::endl;
-    cout << setw(25) <<left << "1.Credit Card " << setw(25) << "2.Digital Wallet" << setw(25) << "3.Cash On Delivery" << endl;
-    cout << "Enter your choice:";
-    cin >> choice;
-    switch(choice)
-  {
-    case 1: 
-{CreditCard c;
-            c.putdata();
-            c.complete();
-            break;
-}
-    case 2:
-    { DigitalWallet dw;
-            dw.putdata();
-            dw.complete();
-            break;
-    }
-    case 3: 
-    {CashOnDelivery cod;
-            cod.putdata();
-            cod.complete();
-            break;
-    }
-  }
-    return 0;
-}
+
+ 
